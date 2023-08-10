@@ -1,0 +1,41 @@
+/* nav bar */
+nav {
+   /* position: absolute;
+   top: 0;
+   left: 0; */
+   display: flex; 
+   justify-content: space-between;
+   padding: 10px 20px 10px 20px;
+   box-shadow: 1px 1px 1px 1px blue;
+}
+
+nav > a {
+    color: var(--brand-primary);
+}
+
+nav > div {
+    display: flex;
+    gap: 4px;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--font-main, sans-serif);
+}
+
+.nav-anchor {
+    display: flex;
+    align-items: center;
+    color: black;
+    gap: 2px;
+    padding: 2px 4px 2px 4px;
+    border: 1px solid var(--lines-color);
+    border-radius: 4px;
+}
+
+/* header */
+
+header {
+    font-family: var(--font-main);
+}
+
