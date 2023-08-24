@@ -14,13 +14,12 @@ body {
         bottom: 0;
         right: 0;
         z-index: 1;
-        max-height: 0; /* Initially, set the max-height to 0 */
+        max-height: 0; 
         width: 100%;
         background-color: var(--bg_default);
         overflow-y: auto;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: max-height 0.3s ease-in-out; /* Adding transition for max-height */
-    
+        transition: max-height 0.3s ease-in-out; 
     }   
     
     .visible {
