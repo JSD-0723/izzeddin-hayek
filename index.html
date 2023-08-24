@@ -4,166 +4,420 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Topics</title>
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&family=Prompt:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="variables.css" />
-    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <nav>
-      <a href="#">Web Topics</a>
-      <div class="">
-        <a href="#" class="nav-anchor">
-          <ion-icon name="moon-outline"></ion-icon>
-          <span class="btn-text">Dark Mode</span>
-        </a>
-        <a href="#" class="nav-anchor">
-          <ion-icon name="heart-outline"></ion-icon>
-          <span class="btn-text">Favourites</span>
-        </a>
-      </div>
-    </nav>
-    <header class="header">
-      <div class="triangle triangle-left"></div>
-      <div class="triangle triangle-right"></div>
-      <div class="header-text">
-        <h1>Welcome to our website!</h1>
-        <span>We have new design that's fresh, modern and easy to use.</span>
-      </div>
-    </header>
-
-    <main>
-      <section id="card-section">
-        <form class="search">
-          <div class="search-input">
-            <label>
-              <ion-icon name="search-outline"></ion-icon>
-            </label>
-            <input type="text" placeholder="Seach the website..." />
-          </div>
-          <div class="form-sort">
-            <label>
-              Sort by: <br />
-              <span>Default</span>
-              <select class="select-label"></select>
-            </label>
-          </div>
-
-          <div class="form-sort" style="border: none">
-            <label>
-              Filter by: <br />
-              <span>Default</span>
-              <select class="select-label"></select>
-            </label>
-          </div>
-        </form>
-
-        <div class="card-container">
-          <div class="card">
-            <img src="assets/html.png" alt="Card Image" />
-            <div class="card-content">
-              <p class="image-description">
-                Web Development language <br />
-                <span class="topics-bold">HTML</span>
-              </p>
-              <div class="rating">
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-              </div>
-              <p class="author">Author: Sarah Smith</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="assets/html.png" alt="Card Image" />
-            <div class="card-content">
-              <p class="image-description">
-                Web Development language <br />
-                <span class="topics-bold">HTML</span>
-              </p>
-              <div class="rating">
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-              </div>
-              <p class="author">Author: Sarah Smith</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="assets/css.webp" alt="Card Image" />
-            <div class="card-content">
-              <p class="image-description">
-                Web Development language <br />
-                <span class="topics-bold">HTML</span>
-              </p>
-              <div class="rating">
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-              </div>
-              <p class="author">Author: Sarah Smith</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="assets/javascript.jpg" alt="Card Image" />
-            <div class="card-content">
-              <p class="image-description">
-                Web Development language <br />
-                <span class="topics-bold">HTML</span>
-              </p>
-              <div class="rating">
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-              </div>
-              <p class="author">Author: Sarah Smith</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="assets/html.png" alt="Card Image" />
-            <div class="card-content">
-              <p class="image-description">
-                Web Development language <br />
-                <span class="topics-bold">HTML</span>
-              </p>
-              <div class="rating">
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-              </div>
-              <p class="author">Author: Sarah Smith</p>
+    <div class="favourites-menu">
+      <h3>My Favourite Topics</h3>
+      <div class="favourites-container">
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
             </div>
           </div>
         </div>
-      </section>
-    </main>
 
-    <footer>
-      Developed with &nbsp;
-      <span>
-        <ion-icon class="footer-hearticon" name="heart-outline"></ion-icon>
-      </span>
-      &nbsp; &copy; 2023
-    </footer>
+        <div class="favourites-card">
+          <img src="assets/css.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/css.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="favourites-card">
+          <img src="assets/react.webp" alt="" />
+          <div class="fav-content">
+            <span>React</span>
+            <div class="fav-rating">
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star" class="fav-card-star"></ion-icon>
+              <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="">Web Topics</a>
+      <nav>
+        <button class="btn_nav" id="darkModeButton">
+          <ion-icon name="moon-outline"></ion-icon>
+          <span class="btn-text">Dark Mode</span>
+        </button>
+        <button class="btn_nav" id="favButton">
+          <ion-icon name="heart-outline"></ion-icon>
+          <span class="btn-text">Favourites</span>
+        </button>
+      </nav>
+    </header>
+    <div class="hero-section">
+      <div class="triangle triangle-left"></div>
+      <div class="triangle triangle-right"></div>
+      <div class="hero-cont">
+        <div class="hero-text">
+          <h1>Welcome to our website!</h1>
+          <p>We have a new design that's fresh, modern, and easy to use.</p>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section>
+        <div class="main-container">
+          <div class="form-container">
+            <form>
+              <div class="search-container">
+                <ion-icon class="search-icon" name="search-outline"></ion-icon
+                >&nbsp;&nbsp;
+                <input type="text" placeholder="Search the website..." />
+              </div>
+              <div class="options">
+                <div class="option-selector sort">
+                  Sort by:
+                  <select>
+                    <option value="Default">Default</option>
+                  </select>
+                </div>
+                <div class="option-selector">
+                  Filter by:
+                  <select>
+                    <option value="Default">Default</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="search-output">
+            <h2>"24" Web Topics Found</h2>
+          </div>
+
+          <div class="card-container">
+            <a href="http://127.0.0.1:5500/details.html">
+              <div class="card">
+                <img src="assets/html.png" alt="Card Image" />
+                <div class="card-content">
+                  <p class="image-description">Web Development language</p>
+                  <h5>HTML</h5>
+                  <div style="margin-top: -12px">
+                    <div class="rating">
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                    </div>
+                    <p class="author">Author: Sarah Smith</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://127.0.0.1:5500/details.html">
+              <div class="card">
+                <img src="assets/html.png" alt="Card Image" />
+                <div class="card-content">
+                  <p class="image-description">Web Development language</p>
+                  <h5>HTML</h5>
+                  <div style="margin-top: -12px">
+                    <div class="rating">
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                    </div>
+                    <p class="author">Author: Sarah Smith</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="http://127.0.0.1:5500/details.html">
+              <div class="card">
+                <img src="assets/html.png" alt="Card Image" />
+                <div class="card-content">
+                  <p class="image-description">Web Development language</p>
+                  <h5>HTML</h5>
+                  <div style="margin-top: -12px">
+                    <div class="rating">
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                    </div>
+                    <p class="author">Author: Sarah Smith</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="http://127.0.0.1:5500/details.html">
+              <div class="card">
+                <img src="assets/html.png" alt="Card Image" />
+                <div class="card-content">
+                  <p class="image-description">Web Development language</p>
+                  <h5>HTML</h5>
+                  <div style="margin-top: -12px">
+                    <div class="rating">
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                    </div>
+                    <p class="author">Author: Sarah Smith</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="http://127.0.0.1:5500/details.html">
+              <div class="card">
+                <img src="assets/html.png" alt="Card Image" />
+                <div class="card-content">
+                  <p class="image-description">Web Development language</p>
+                  <h5>HTML</h5>
+                  <div style="margin-top: -12px">
+                    <div class="rating">
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                      <ion-icon name="star" class="star"></ion-icon>
+                    </div>
+                    <p class="author">Author: Sarah Smith</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          Developed with&nbsp;
+          <ion-icon name="heart" class="heart-icon"></ion-icon>&nbsp;&copy; 2023
+        </div>
+      </footer>
+    </main>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -172,5 +426,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
