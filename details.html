@@ -14,14 +14,16 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <a href="#" style="font-weight: 700; font-size: 24px">Web Topics</a>
+    <header class="shared-padding">
+      <a href="index.html" style="font-weight: 700; font-size: 24px"
+        >Web Topics</a
+      >
       <nav>
-        <button class="btn_nav" id="darkModeButton">
+        <button class="nav-button" id="darkModeButton">
           <ion-icon name="moon-outline"></ion-icon>
           <span class="btn-text">Dark Mode</span>
         </button>
-        <button class="btn_nav">
+        <button class="nav-button">
           <ion-icon name="heart-outline"></ion-icon>
           <span class="btn-text">Favourites</span>
         </button>
@@ -42,7 +44,7 @@
         <div class="topic-content">
           <div class="topic-details">
             <h3>Web Development languages</h3>
-            <h2>HTML</h2>
+            <h1>HTML</h1>
             <div class="rating-details">
               <ion-icon name="star" class="star"></ion-icon>
               <ion-icon name="star" class="star"></ion-icon>
@@ -51,7 +53,7 @@
               <ion-icon name="star-outline" class="star"></ion-icon>
             </div>
           </div>
-          <p>
+          <p class="shared-width">
             HTML (Hypertext Markup Language) is the standard markup language for
             creating web pages and other information that can be displayed in a
             web browser. It provides a structure for content and defines how it
@@ -64,7 +66,7 @@
           <img src="assets/javascript.jpg" alt="Card Image" />
           <div class="detailed-card-content">
             <div class="detailed-card-author">
-              <span>HTML</span> &nbsp; by &nbsp;<a>Sarah Smith</a>
+              HTML&nbsp;by &nbsp;<span>Sarah Smith</span>
             </div>
             <div class="detailed-card-fav">
               <span>Interested about this topic?</span>
@@ -72,7 +74,7 @@
                 Add to Favourites &nbsp;
                 <ion-icon name="heart-outline" class="heart-fav"></ion-icon>
               </button>
-              <span style="text-align: center; color: #989898"
+              <span style="text-align: center; color: #989898; font-size: 16px"
                 >Unlimited Credits</span
               >
             </div>
@@ -80,7 +82,7 @@
         </div>
       </section>
       <section class="sub-topics-container">
-        <div class="sub-topics-grid">
+        <div class="sub-topics-grid shared-width">
           <div class="grid-row"><h2>HTML Sub Topics</h2></div>
           <div class="grid-row">
             <ion-icon
