@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="x-icon" href="assets/TAP.png" />
     <title>Web Topics</title>
     <link rel="stylesheet" href="variables.css" />
     <link rel="stylesheet" href="style.css" />
@@ -287,7 +288,11 @@
               <div class="search-container">
                 <ion-icon class="search-icon" name="search-outline"></ion-icon
                 >&nbsp;&nbsp;
-                <input type="text" placeholder="Search the website..." />
+                <input
+                  id="search-input"
+                  type="text"
+                  placeholder="Search the website..."
+                />
               </div>
               <div class="options">
                 <div class="option-selector">
@@ -306,32 +311,15 @@
             </form>
           </div>
           <div class="search-output">
-            <h2>"24" Web Topics Found</h2>
+            <h2 id="search-output">Web Topics Found</h2>
           </div>
 
-          <div class="card-container">
-            <a href="details.html">
-              <div class="card">
-                <img src="assets/html.png" alt="Card Image" />
-                <div class="card-content">
-                  <p class="image-description">Web Development language</p>
-                  <h5>HTML</h5>
-                  <div class="rating-wrapper">
-                    <div class="rating">
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                    </div>
-                    <p class="author">Author: Sarah Smith</p>
-                  </div>
-                </div>
-              </div>
-            </a>
+          <div class="card-container" id="cardContainer">
+            <div class="loader" id="loader" style="display: none"></div>
 
-            <a href="details.html">
-              <div class="card">
+            <!-- A template card with the "display: none" style -->
+            <div class="card" style="display: none">
+              <a href="details.html">
                 <img src="assets/html.png" alt="Card Image" />
                 <div class="card-content">
                   <p class="image-description">Web Development language</p>
@@ -347,128 +335,8 @@
                     <p class="author">Author: Sarah Smith</p>
                   </div>
                 </div>
-              </div>
-            </a>
-
-            <a href="details.html">
-              <div class="card">
-                <img src="assets/html.png" alt="Card Image" />
-                <div class="card-content">
-                  <p class="image-description">Web Development language</p>
-                  <h5>HTML</h5>
-                  <div class="rating-wrapper">
-                    <div class="rating">
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                    </div>
-                    <p class="author">Author: Sarah Smith</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="details.html">
-              <div class="card">
-                <img src="assets/html.png" alt="Card Image" />
-                <div class="card-content">
-                  <p class="image-description">Web Development language</p>
-                  <h5>HTML</h5>
-                  <div class="rating-wrapper">
-                    <div class="rating">
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                    </div>
-                    <p class="author">Author: Sarah Smith</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="details.html">
-              <div class="card">
-                <img src="assets/html.png" alt="Card Image" />
-                <div class="card-content">
-                  <p class="image-description">Web Development language</p>
-                  <h5>HTML</h5>
-                  <div class="rating-wrapper">
-                    <div class="rating">
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                    </div>
-                    <p class="author">Author: Sarah Smith</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="details.html">
-              <div class="card">
-                <img src="assets/html.png" alt="Card Image" />
-                <div class="card-content">
-                  <p class="image-description">Web Development language</p>
-                  <h5>HTML</h5>
-                  <div class="rating-wrapper">
-                    <div class="rating">
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                    </div>
-                    <p class="author">Author: Sarah Smith</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="details.html">
-              <div class="card">
-                <img src="assets/html.png" alt="Card Image" />
-                <div class="card-content">
-                  <p class="image-description">Web Development language</p>
-                  <h5>HTML</h5>
-                  <div class="rating-wrapper">
-                    <div class="rating">
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                    </div>
-                    <p class="author">Author: Sarah Smith</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="details.html">
-              <div class="card">
-                <img src="assets/html.png" alt="Card Image" />
-                <div class="card-content">
-                  <p class="image-description">Web Development language</p>
-                  <h5>HTML</h5>
-                  <div class="rating-wrapper">
-                    <div class="rating">
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                      <ion-icon name="star" class="star"></ion-icon>
-                    </div>
-                    <p class="author">Author: Sarah Smith</p>
-                  </div>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -488,5 +356,6 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="script.js"></script>
+    <script src="fetchdata.js"></script>
   </body>
 </html>
