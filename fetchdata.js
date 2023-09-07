@@ -11,6 +11,7 @@ const hideLoader = () => {
 let data;
 
 async function fetchData() {
+  showLoader();
   try {
     const res = await fetch("https://tap-web-1.herokuapp.com/topics/list");
     if (!res.ok) {
@@ -45,6 +46,7 @@ function populateCards(data) {
 
     cardContainer.appendChild(cardClone);
   });
+  hideLoader();
   console.log(data);
   const topicsTotalNumber = document.getElementById("search-output");
   topicsTotalNumber.innerHTML =
