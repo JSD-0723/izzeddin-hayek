@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="x-icon" href="assets/TAP.png" />
+    <title>Web Topics</title>
+    <link rel="stylesheet" href="../variables.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&family=Prompt:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="home">
+      <div class="favourites-menu">
+        <h3>My Favourite Topics</h3>
+        <div class="favourites-container">
+          <div class="favourites-card">
+            <img src="../assets/react.webp" alt="" />
+            <div class="fav-content">
+              <span>React</span>
+              <div class="fav-rating">
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <div class="favourites-card">
+            <img src="../assets/css.webp" alt="" />
+            <div class="fav-content">
+              <span>React</span>
+              <div class="fav-rating">
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <div class="favourites-card">
+            <img src="../assets/css.webp" alt="" />
+            <div class="fav-content">
+              <span>React</span>
+              <div class="fav-rating">
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <div class="favourites-card">
+            <img src="../assets/react.webp" alt="" />
+            <div class="fav-content">
+              <span>React</span>
+              <div class="fav-rating">
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star" class="fav-card-star"></ion-icon>
+                <ion-icon name="star-outline" class="fav-card-star"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="shared-padding">
+        <a href="">Web Topics</a>
+        <nav>
+          <button class="nav-button" id="darkModeButton">
+            <ion-icon name="moon-outline"></ion-icon>
+            <span class="btn-text">Dark Mode</span>
+          </button>
+          <button class="nav-button" id="favButton">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="btn-text">Favourites</span>
+          </button>
+        </nav>
+      </header>
+      <div class="hero-section">
+        <div class="triangle triangle-left"></div>
+        <div class="triangle triangle-right"></div>
+        <div class="hero-cont">
+          <div class="hero-text">
+            <h1>Welcome to our website!</h1>
+            <p>We have a new design that's fresh, modern, and easy to use.</p>
+          </div>
+        </div>
+      </div>
+      <main>
+        <section>
+          <div class="main-container shared-padding">
+            <div class="form-container">
+              <form>
+                <div class="search-container">
+                  <ion-icon class="search-icon" name="search-outline"></ion-icon
+                  >&nbsp;&nbsp;
+                  <input
+                    id="search-input"
+                    type="text"
+                    placeholder="Search the website..."
+                  />
+                </div>
+                <div class="options">
+                  <div class="option-selector">
+                    Sort by:
+                    <select id="sortSelect">
+                      <option value="Default">Default</option>
+                      <option value="Topic Title">Topic Title</option>
+                      <option value="Author Name">Author Name</option>
+                    </select>
+                  </div>
+                  <div class="option-selector">
+                    Filter by:
+                    <select id="filterSelect">
+                      <option value="Default">Default</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="search-output">
+              <h2 id="search-output">Web Topics Found</h2>
+            </div>
+
+            <div class="card-container" id="cardContainer">
+              <div class="loader" id="loader" style="display: none"></div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="footer-container">
+            Developed with&nbsp;
+            <ion-icon name="heart" class="heart-icon"></ion-icon>&nbsp;&copy;
+            2023
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+    <script src="fetchdata.js" type="module"></script>
+  </body>
+</html>
